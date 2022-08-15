@@ -21,8 +21,8 @@
             <div class="title mr-[100px] text-base uppercase tracking-[2px] font-semibold ">LookBook</div>
             <div class="categories mr-auto">
                 <ul>
-                    <li class="inline-block px-[30px] uppercase text-sm tracking-[1px] font-medium">man</li>
-                    <li class="inline-block px-[30px] uppercase text-sm tracking-[1px] font-medium">woman</li>
+                    <li class="inline-block px-[30px] uppercase text-sm tracking-[1px] font-medium">male</li>
+                    <li class="inline-block px-[30px] uppercase text-sm tracking-[1px] font-medium">female</li>
                 </ul>
             </div>
 
@@ -40,14 +40,16 @@
 
         <div class="img-wrapper01 absolute top-[120px] left-[200px]">
             <div class="img01 rounded-lg "> </div>
+            <div class="block absolute top-0 left-0 w-0 h-full"></div>
         </div>
         <div class="img-wrapper02 absolute top-0 left-[650px]">
             <div class="img02"></div>
+            <div class="block absolute top-0 left-0 w-0 h-full "></div>
         </div>
 
         <div class="text absolute whitespace-nowrap top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-            <h1 class="text-[120px] font-tinos font-normal tracking-[5px]">The Great Escape</h1>
-            <p class="text-[30px] uppercase font-tinos font-light tracking-[5px]">Lorem ipsum dolor sit.</p>
+            <h1 class="text-[120px] font-tinos font-normal tracking-[5px]"><span class="hidetext">The Great Escape</span></h1>
+            <p class="text-[30px] uppercase font-tinos font-light tracking-[5px]"><span class="hidetext">Lorem ipsum dolor sit.</span></p>
         </div>
 
         <div class="desc absolute left-[200px] bottom-[70px] flex ">
@@ -59,7 +61,21 @@
             </p>
         </div>
 
-        <div class="scrolldown"></div>
+        <div class="scrolldown absolute bottom-[110px] left-[-60px] -rotate-90 text-[10px] font-medium uppercase tracking-[5px]">scroll down</div>
+
+        <div class="bottomnav absolute bottom-[10px] right-[100px]">
+            <div class="next text-sm tracking-[8px] font-medium uppercase mb-5" >up next</div>
+
+            <nav class="flex">
+                <ul class="bg-white text-black flex flex-col justify-between">
+                    <li class=" px-[20px] py-[30px] text-[25px] "><i class="ri-arrow-up-line"></i></li>
+                    <li class="px-[20px] py-[30px] text-[25px] "><i class="ri-arrow-down-line"></i></li>
+                </ul>
+
+
+                <div class="bottomNavImg"></div>
+            </nav>
+        </div>
 
 
 

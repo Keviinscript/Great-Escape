@@ -567,8 +567,8 @@ html {
   right: -90px;
 }
 
-.top-\[120px\] {
-  top: 120px;
+.top-\[60px\] {
+  top: 60px;
 }
 
 .left-\[200px\] {
@@ -583,16 +583,20 @@ html {
   left: 0px;
 }
 
-.left-\[650px\] {
-  left: 650px;
+.bottom-0 {
+  bottom: 0px;
+}
+
+.left-\[10px\] {
+  left: 10px;
 }
 
 .top-\[50\%\] {
   top: 50%;
 }
 
-.left-\[50\%\] {
-  left: 50%;
+.left-\[55\%\] {
+  left: 55%;
 }
 
 .bottom-\[70px\] {
@@ -615,16 +619,12 @@ html {
   right: 100px;
 }
 
-.mr-\[100px\] {
-  margin-right: 100px;
+.mr-\[50px\] {
+  margin-right: 50px;
 }
 
 .mr-auto {
   margin-right: auto;
-}
-
-.mr-\[50px\] {
-  margin-right: 50px;
 }
 
 .mb-\[10px\] {
@@ -633,6 +633,14 @@ html {
 
 .mb-5 {
   margin-bottom: 1.25rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .block {
@@ -716,14 +724,14 @@ html {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.px-\[50px\] {
-  padding-left: 50px;
-  padding-right: 50px;
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
-.px-\[30px\] {
-  padding-left: 30px;
-  padding-right: 30px;
+.px-\[10px\] {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .px-\[20px\] {
@@ -734,6 +742,14 @@ html {
 .py-\[30px\] {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
 }
 
 .font-tinos {
@@ -750,12 +766,8 @@ html {
   line-height: 1.25rem;
 }
 
-.text-\[120px\] {
-  font-size: 120px;
-}
-
-.text-\[30px\] {
-  font-size: 30px;
+.text-\[45px\] {
+  font-size: 45px;
 }
 
 .text-\[12px\] {
@@ -847,6 +859,18 @@ body{
           animation: image-appear 0.0001s linear forwards;
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
+}
+
+@media screen and (max-width:500px){
+  .img-wrapper01 .img01{
+    height: 300px;
+    width: 200px;
+  }
+
+  .img-wrapper02 .img02{
+    height: 55vh;
+    width: 300px;
+  }
 }
 
 @-webkit-keyframes image-appear {
@@ -950,6 +974,59 @@ body{
   width: 100%;
 }
 
-.text h1 .hidetext{
+@media screen and (max-width:500px) {
+  .text h1{
+    position: relative;
+    overflow: hidden;
+    height: 70px;
+    width: 100%;
+  }
+}
+
+/* .text h1 .hidetext{
   position: absolute ;
+} */
+
+@media (min-width: 1024px) {
+  .lg\:top-\[120px\] {
+    top: 120px;
+  }
+
+  .lg\:top-0 {
+    top: 0px;
+  }
+
+  .lg\:left-\[650px\] {
+    left: 650px;
+  }
+
+  .lg\:left-\[50\%\] {
+    left: 50%;
+  }
+
+  .lg\:mr-\[100px\] {
+    margin-right: 100px;
+  }
+
+  .lg\:inline-block {
+    display: inline-block;
+  }
+
+  .lg\:px-\[50px\] {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .lg\:px-\[30px\] {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .lg\:text-\[120px\] {
+    font-size: 120px;
+  }
+
+  .lg\:text-\[30px\] {
+    font-size: 30px;
+  }
 }

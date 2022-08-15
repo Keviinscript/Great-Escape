@@ -43,6 +43,18 @@ body{
     animation-delay: 2s;
 }
 
+@media screen and (max-width:500px){
+
+  .img-wrapper01 .img01{
+    height: 300px;
+    width: 200px;
+  }
+  .img-wrapper02 .img02{
+    height: 55vh;
+    width: 300px;
+  }
+}
+
 @keyframes image-appear {
   0%{
     opacity: 0;
@@ -112,6 +124,15 @@ body{
   width: 100%;
 }
 
-.text h1 .hidetext{
-  position: absolute ;
+@media screen and (max-width:500px) {
+  .text h1{
+    position: relative;
+    overflow: hidden;
+    height: 70px;
+    width: 100%;
+  }
 }
+
+/* .text h1 .hidetext{
+  position: absolute ;
+} */
